@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadSideDrawer xmlns:rd="nativescript-ui-sidedrawer">
+    <RadSideDrawer.drawerContent>
+        <StackLayout>
+            <GridLayout rows="auto" columns="*, auto" class="drawer-header">
+                <Label col="0" text="IUE SFL Dashboard" class="h2" />
+                <Image col="1" src="~/assets/logo.png" width="40" height="40" />
+            </GridLayout>
+            
+            <StackLayout class="drawer-content">
+                <Label text="About Us" tap="onAboutTap" class="drawer-item" />
+                <Label text="Feedback" tap="onFeedbackTap" class="drawer-item" />
+                <Label text="Settings" tap="onSettingsTap" class="drawer-item" />
+                <Label text="Terms of Use" tap="onTermsTap" class="drawer-item" />
+                <Label text="Privacy Policy" tap="onPrivacyTap" class="drawer-item" />
+            </StackLayout>
+        </StackLayout>
+    </RadSideDrawer.drawerContent>
+
+    <RadSideDrawer.mainContent>
+        <Frame defaultPage="views/main-page"></Frame>
+    </RadSideDrawer.mainContent>
+</RadSideDrawer>

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drawer-header {
+    padding: 16;
+    background-color: #f0f0f0;
+}
+
+.drawer-item {
+    padding: 16;
+    border-bottom-width: 1;
+    border-color: #e0e0e0;
+}
+
+.theme-light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.theme-dark {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+}
+
+.form-field {
+    margin: 10;
+    padding: 10;
+    border-width: 1;
+    border-color: #e0e0e0;
+    border-radius: 5;
+}
+
+.primary-button {
+    background-color: #007AFF;
+    color: white;
+    padding: 10;
+    border-radius: 5;
+    text-align: center;
+}

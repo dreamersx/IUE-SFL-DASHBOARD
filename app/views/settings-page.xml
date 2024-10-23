@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Settings">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="onBackTap"/>
+    </ActionBar>
+
+    <StackLayout class="p-4">
+        <GridLayout rows="auto" columns="*, auto">
+            <Label text="Dark Theme" col="0" />
+            <Switch checked="{{ isDarkTheme }}" col="1" tap="{{ onThemeToggle }}" />
+        </GridLayout>
+        
+        <GridLayout rows="auto" columns="*, auto">
+            <Label text="Push Notifications" col="0" />
+            <Switch checked="{{ pushNotificationsEnabled }}" col="1" tap="{{ onPushNotificationsToggle }}" />
+        </GridLayout>
+    </StackLayout>
+</Page>

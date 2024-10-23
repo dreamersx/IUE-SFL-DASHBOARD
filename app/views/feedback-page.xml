@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Feedback">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="onBackTap"/>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="p-4">
+            <TextField hint="Full Name" text="{{ fullName }}" class="form-field" />
+            <TextField hint="Email" text="{{ email }}" keyboardType="email" class="form-field" />
+            <TextView hint="Message" text="{{ message }}" height="200" class="form-field" />
+            <Button text="Send Feedback" tap="{{ onSendFeedback }}" class="primary-button" />
+        </StackLayout>
+    </ScrollView>
+</Page>
